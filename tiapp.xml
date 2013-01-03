@@ -3,7 +3,7 @@
 <!-- These values are edited/maintained by TideSDK Developer -->
 <id>io.viewport</id>
 <name>Viewport</name>
-<version>1.0</version>
+<version>0.1.0</version>
 <publisher>Jason Huggins</publisher>
 <url>viewport.io</url>
 <icon>viewport.png</icon>
