@@ -1,1 +1,5 @@
-Place your change log text here.  This file will be incorporated with your app at package time.
+Viewport 0.1.0 (released 2012-01-03)
+ - Simple SVG rendering and XML output
+ - Added Ace text editor
+ - Added Bootstrap for layout
+ - Working native OS X .app and dmg. (Thanks TideSDK!)
