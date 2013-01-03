@@ -1,0 +1,21 @@
+#appname:Viewport
+#appid:io.viewport
+#publisher:Jason Huggins
+#image:viewport.png
+#url:viewport.io
+#guid:9db4769c-960f-48fd-89c9-0896f316c65c
+#desc:The Hackers 2D CAD/CAM Modeler
+#type:desktop
+runtime:1.3.1-beta
+app:1.3.1-beta
+codec:1.3.1-beta
+database:1.3.1-beta
+filesystem:1.3.1-beta
+media:1.3.1-beta
+monkey:1.3.1-beta
+network:1.3.1-beta
+platform:1.3.1-beta
+process:1.3.1-beta
+python:1.3.1-beta
+ui:1.3.1-beta
+worker:1.3.1-beta
