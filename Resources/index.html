@@ -36,16 +36,16 @@
             <pre id="editor">//Width and height
 var unit_of_measure = "mm"
 var w = "125" + unit_of_measure
-var h = "50" + unit_of_measure
-
+var h = "90" + unit_of_measure
 
 var svg = d3.select("#viewport")
             .append("svg")
             .attr("id", "svg")
             .attr("width", w)
-            .attr("height", h);
+            .attr("height", h)
+            .attr("viewBox","0 0 125 80"); 
 
-var dataset = [ 8, 16, 24, 32, 40, 48, 56];
+var dataset = d3.range(8,8*5,8);
  
 var circles = svg.selectAll("circle")
                  .data(dataset)
@@ -53,11 +53,27 @@ var circles = svg.selectAll("circle")
                  .append("circle");
 
 circles.attr("cx", function(d, i) {
-            return d + unit_of_measure;
+            return d;
         })
-       .attr("cy", "25" + unit_of_measure)
-       .attr("r", "2.4" + unit_of_measure)
+       .attr("cy", 4)
+       .attr("r", 2.4)
 
+vp_rect = function(x,y,w,h){
+  var rectGroup = svg.append("g")
+                     .attr("transform", 
+                           'translate(' +x+ ',' +y+ ')' )
+  var rect = rectGroup.append("path")
+                      .attr("stroke","grey")
+                      .attr("stroke-width",".5")
+                      .attr("fill","none")
+
+                      .attr("d","M 0 0" + 
+                                "  L " + 0 + " " + h + 
+                                "  L " + w + " " + h +
+                                "  L " + w + " " + 0 + 
+                                "  Z");
+}
+vp_rect(4,0,8*4,8);
 
 var node = document.getElementById('svg')
 var serializer = new XMLSerializer()
